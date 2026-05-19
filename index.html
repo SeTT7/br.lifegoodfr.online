@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#160E08">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Meu Anjo">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<title>O Chamado do Meu Anjo — Uma jornada espiritual</title>
+<meta property="og:title" content="O Chamado do Meu Anjo">
+<meta property="og:description" content="Uma jornada espiritual por textos sagrados, cantos gregorianos e práticas divinas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="dust" aria-hidden="true">
+  <span></span><span></span><span></span><span></span><span></span><span></span>
+  <span></span><span></span><span></span><span></span><span></span><span></span>
+</div>
+
+<svg class="rays" viewBox="0 0 800 380" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(400,0)">
+    <line x1="0" y1="0" x2="-400" y2="380" stroke="#C9A84C" stroke-width="1"/>
+    <line x1="0" y1="0" x2="-260" y2="380" stroke="#C9A84C" stroke-width="1"/>
+    <line x1="0" y1="0" x2="-130" y2="380" stroke="#C9A84C" stroke-width="1"/>
+    <line x1="0" y1="0" x2="0"    y2="380" stroke="#C9A84C" stroke-width="1"/>
+    <line x1="0" y1="0" x2="130"  y2="380" stroke="#C9A84C" stroke-width="1"/>
+    <line x1="0" y1="0" x2="260"  y2="380" stroke="#C9A84C" stroke-width="1"/>
+    <line x1="0" y1="0" x2="400"  y2="380" stroke="#C9A84C" stroke-width="1"/>
+  </g>
+</svg>
+
+<main class="shell">
+  <header class="page-header">
+    <p class="page-eyebrow">O Chamado do</p>
+    <h1 class="page-title">Meu Anjo da <span class="accent">Guarda</span></h1>
+    <p class="page-sub">Uma jornada espiritual por textos sagrados, cantos gregorianos e práticas divinas.</p>
+  </header>
+
+  <div class="star-divider"><span>★</span></div>
+
+  <!-- BRIEFING -->
+  <section class="briefing">
+    <p>
+      Bem-vindo, buscador sagrado. Nestas páginas você encontrará seu kit completo —
+      <strong>quatro livros antigos</strong>, uma <strong>biblioteca de cantos gregorianos</strong>,
+      e uma <strong>prática ritual diária</strong> pronta para caminhar com você.
+    </p>
+    <p>
+      Tome o seu tempo. Volte sempre que precisar.
+      <em>Seu Anjo da Guarda já está ouvindo.</em>
+    </p>
+  </section>
+
+  <!-- INSTALL APP — hidden when running as PWA -->
+  <section class="install-cta" id="installCta">
+    <button class="download-btn" id="installBtn" type="button">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="3"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+      Instalar no Celular
+    </button>
+    <p class="install-cta-note" id="installNote">Abra o kit como um app de verdade, mesmo sem internet.</p>
+  </section>
+
+  <!-- 3 MAIN HUB CARDS -->
+  <section class="home-cards">
+    <a class="home-card home-card-hero" href="library/index.html">
+      <span class="home-card-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+      </span>
+      <div class="home-card-body">
+        <h2 class="home-card-title">Biblioteca</h2>
+        <p class="home-card-desc">Os quatro livros sagrados — leia cada capítulo no seu ritmo.</p>
+      </div>
+      <span class="home-card-arrow">›</span>
+    </a>
+
+    <a class="home-card home-card-hero" href="chants/index.html">
+      <span class="home-card-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+      </span>
+      <div class="home-card-body">
+        <h2 class="home-card-title">Cantos</h2>
+        <p class="home-card-desc">Áudio gregoriano sagrado — ouça onde quiser, quando quiser.</p>
+      </div>
+      <span class="home-card-arrow">›</span>
+    </a>
+
+    <a class="home-card home-card-hero" href="support/index.html">
+      <span class="home-card-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      </span>
+      <div class="home-card-body">
+        <h2 class="home-card-title">Suporte</h2>
+        <p class="home-card-desc">Dúvidas, pedidos de reembolso ou qualquer outra coisa.</p>
+      </div>
+      <span class="home-card-arrow">›</span>
+    </a>
+  </section>
+
+</main>
+
+<style>
+  .briefing {
+    max-width: 580px; margin: 0 auto 28px;
+    text-align: center;
+    font-family: 'Lora', Georgia, serif;
+    font-size: clamp(15px, 2vw, 17px);
+    line-height: 1.75;
+    color: #D4C9B5;
+  }
+  .briefing p { margin-bottom: 14px; }
+  .briefing p:last-child { margin-bottom: 0; }
+  .briefing strong { color: var(--gold-light); font-weight: 600; }
+  .briefing em { color: var(--gold); font-style: italic; }
+
+  .install-cta {
+    max-width: 460px; margin: 0 auto 40px;
+    text-align: center;
+    padding: 22px 18px;
+    background: linear-gradient(135deg, rgba(201,168,76,0.08), rgba(201,168,76,0.02));
+    border: 1px dashed rgba(201,168,76,0.35);
+    border-radius: 10px;
+  }
+  .install-cta .download-btn { margin-bottom: 10px; }
+  .install-cta-note {
+    font-size: 12px; color: #8E7C66; font-style: italic;
+    letter-spacing: 0.3px;
+  }
+  body.is-pwa .install-cta { display: none; }
+
+  /* ===== iOS install guide ===== */
+  .ios-guide {
+    text-align: left;
+    animation: iosGuideIn 0.4s ease-out;
+  }
+  @keyframes iosGuideIn { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
+  .ios-guide-title {
+    font-family: 'Cinzel', serif; font-size: 13px; letter-spacing: 3px;
+    text-transform: uppercase; color: var(--gold);
+    text-align: center; margin-bottom: 18px;
+    text-shadow: 0 0 10px rgba(248,229,176,0.4);
+  }
+  .ios-guide-steps {
+    list-style: none; padding: 0; margin: 0 0 18px;
+    display: flex; flex-direction: column; gap: 14px;
+  }
+  .ios-guide-steps li {
+    display: flex; align-items: flex-start; gap: 12px;
+    font-family: 'Lora', serif; font-size: 14px;
+    line-height: 1.55; color: var(--cream);
+  }
+  .ios-step-num {
+    flex: 0 0 28px; height: 28px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold-warm, #D4A93D) 100%);
+    color: #160E08;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Cinzel', serif; font-weight: 900; font-size: 13px;
+    box-shadow: 0 0 12px rgba(248,229,176,0.5);
+  }
+  .ios-step-text strong { color: var(--gold-light); }
+  .ios-share-icon {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 26px; height: 26px;
+    border-radius: 5px;
+    background: rgba(0,122,255,0.18);
+    border: 1px solid rgba(0,122,255,0.6);
+    color: #4DA3FF;
+    vertical-align: middle;
+    margin: 0 3px;
+  }
+  .ios-guide-arrows {
+    display: flex; justify-content: center; gap: 8px;
+    margin: 4px 0 8px;
+    font-size: 26px; color: var(--gold-light);
+    text-shadow: 0 0 14px rgba(248,229,176,0.6);
+  }
+  .ios-guide-arrows span {
+    animation: bounceDown 1.4s ease-in-out infinite;
+  }
+  .ios-guide-arrows span:nth-child(2) { animation-delay: 0.15s; }
+  .ios-guide-arrows span:nth-child(3) { animation-delay: 0.30s; }
+  @keyframes bounceDown {
+    0%, 100% { transform: translateY(0); opacity: 0.4; }
+    50%      { transform: translateY(8px); opacity: 1; }
+  }
+  .ios-guide-bottom-hint {
+    text-align: center;
+    font-family: 'Lora', serif; font-size: 12px;
+    color: var(--gold); font-style: italic;
+    letter-spacing: 0.5px; margin: 0;
+  }
+  .ios-guide-bottom-hint svg { color: #4DA3FF; }
+
+  /* Bigger hero cards for the 3 hub items */
+  .home-card-hero { padding: 28px 26px; align-items: center; }
+  .home-card-hero .home-card-icon { width: 54px; height: 54px; flex-basis: 54px; }
+  .home-card-hero .home-card-icon svg { width: 26px; height: 26px; }
+  .home-card-hero .home-card-title { font-size: 22px; margin-bottom: 4px; }
+  .home-card-hero .home-card-desc { font-size: 15px; }
+  .home-card-arrow {
+    font-family: 'Cinzel', serif; font-size: 26px;
+    color: var(--gold); opacity: 0.55;
+    margin-left: auto; padding-left: 10px;
+    transition: transform 0.2s, opacity 0.2s;
+  }
+  .home-card-hero:hover .home-card-arrow { transform: translateX(4px); opacity: 1; }
+</style>
+
+<script>
+  (function() {
+    // Hide if already running as installed PWA
+    if (window.matchMedia('(display-mode: standalone)').matches
+        || window.navigator.standalone === true) {
+      document.body.classList.add('is-pwa');
+      return;
+    }
+
+    var ua = (navigator.userAgent || '').toLowerCase();
+    var isIOS = /iphone|ipad|ipod/.test(ua) && !window.MSStream;
+    var btn = document.getElementById('installBtn');
+    var note = document.getElementById('installNote');
+    var deferredPrompt = null;
+
+    // Listen for Android/Chrome install prompt
+    window.addEventListener('beforeinstallprompt', function(e) {
+      e.preventDefault();
+      deferredPrompt = e;
+    });
+
+    btn.addEventListener('click', function() {
+      // Android (or any browser supporting the prompt API)
+      if (deferredPrompt) {
+        deferredPrompt.prompt();
+        deferredPrompt.userChoice.then(function(choice) {
+          if (choice.outcome === 'accepted') {
+            document.getElementById('installCta').style.display = 'none';
+          }
+          deferredPrompt = null;
+        });
+        return;
+      }
+      // iOS Safari — show rich visual instructions
+      if (isIOS) {
+        showIOSGuide();
+        return;
+      }
+      // Desktop or unsupported browser
+      note.innerHTML = 'Abra esta página no seu <strong>iPhone ou Android</strong> para instalar o app.';
+    });
+
+    // Hide button automatically once installed
+    window.addEventListener('appinstalled', function() {
+      document.getElementById('installCta').style.display = 'none';
+    });
+
+    function showIOSGuide() {
+      var cta = document.getElementById('installCta');
+      cta.innerHTML =
+        '<div class="ios-guide">' +
+          '<p class="ios-guide-title">📱 Instalar no iPhone</p>' +
+          '<ol class="ios-guide-steps">' +
+            '<li>' +
+              '<span class="ios-step-num">1</span>' +
+              '<span class="ios-step-text">Toque no botão <strong>Compartilhar</strong> ' +
+                '<span class="ios-share-icon" aria-hidden="true">' +
+                  '<svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">' +
+                    '<path d="M7 1L7 11M7 1L3 5M7 1L11 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>' +
+                    '<rect x="1" y="7" width="12" height="10" rx="2" stroke="currentColor" stroke-width="1.6"/>' +
+                  '</svg>' +
+                '</span>' +
+                ' na parte inferior do Safari.</span>' +
+            '</li>' +
+            '<li>' +
+              '<span class="ios-step-num">2</span>' +
+              '<span class="ios-step-text">Role para baixo e toque em <strong>"Adicionar à Tela de Início"</strong>.</span>' +
+            '</li>' +
+            '<li>' +
+              '<span class="ios-step-num">3</span>' +
+              '<span class="ios-step-text">Toque em <strong>"Adicionar"</strong> — pronto!</span>' +
+            '</li>' +
+          '</ol>' +
+          '<div class="ios-guide-arrows" aria-hidden="true">' +
+            '<span>↓</span><span>↓</span><span>↓</span>' +
+          '</div>' +
+          '<p class="ios-guide-bottom-hint">Procure o <svg width="13" height="16" viewBox="0 0 14 18" fill="none" style="display:inline-block;vertical-align:-3px;margin:0 2px;"><path d="M7 1L7 11M7 1L3 5M7 1L11 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><rect x="1" y="7" width="12" height="10" rx="2" stroke="currentColor" stroke-width="1.6"/></svg> icon below ↓</p>' +
+        '</div>';
+    }
+  })();
+</script>
+
+<nav class="bottom-nav" aria-label="Primary">
+  <div class="bottom-nav-inner">
+    <a class="nav-item active" href="index.html">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      Início
+    </a>
+    <a class="nav-item" href="library/index.html">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+      Biblioteca
+    </a>
+    <a class="nav-item" href="chants/index.html">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+      Cantos
+    </a>
+    <a class="nav-item" href="support/index.html">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      Suporte
+    </a>
+  </div>
+</nav>
+
+</body>
+</html>

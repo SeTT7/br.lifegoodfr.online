@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark">
+<title>Instalar o App — O Chamado do Meu Anjo</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="My Angel">
+<meta name="theme-color" content="#160E08">
+<link rel="manifest" href="../manifest.json">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<style>
+  .install-wrap {
+    max-width: 520px; margin: 60px auto 40px;
+    text-align: center;
+    padding: 36px 28px;
+  }
+  .install-icon-wrap {
+    width: 120px; height: 120px;
+    margin: 0 auto 26px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(248,229,176,0.18), rgba(201,168,76,0.04));
+    border: 1.5px solid rgba(248,229,176,0.4);
+    box-shadow: 0 0 40px rgba(248,229,176,0.25);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .install-icon-wrap img { width: 92px; height: 92px; border-radius: 50%; }
+  .install-title {
+    font-family: 'Cinzel', serif; font-size: clamp(24px, 4vw, 32px);
+    font-weight: 900; color: var(--white); margin-bottom: 10px; letter-spacing: 1px;
+  }
+  .install-title .gold { color: var(--gold-light); }
+  .install-sub {
+    font-size: 15px; color: var(--muted); font-style: italic;
+    margin-bottom: 32px; line-height: 1.6;
+  }
+  .install-action {
+    display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+    padding: 18px 36px;
+    background: linear-gradient(135deg, #D4A93D 0%, #8B6914 100%);
+    color: #160E08;
+    font-family: 'Cinzel', serif; font-size: 15px; font-weight: 900;
+    letter-spacing: 2.5px; text-transform: uppercase;
+    border-radius: 40px; border: 1px solid var(--gold-light);
+    box-shadow: 0 8px 30px rgba(212,169,61,0.5), inset 0 1px 0 rgba(255,255,255,0.35);
+    cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;
+    min-width: 260px;
+  }
+  .install-action:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px rgba(212,169,61,0.65);
+  }
+  .install-action:disabled { opacity: 0.5; cursor: not-allowed; }
+  .install-action svg { width: 20px; height: 20px; }
+
+  .install-hint {
+    margin-top: 26px;
+    font-size: 13px; color: #B5A37F;
+    line-height: 1.7;
+  }
+  .install-hint strong { color: var(--gold-light); }
+  .install-success {
+    color: #7BC97D;
+    font-family: 'Cinzel', serif; font-size: 13px; letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 20px; display: none;
+  }
+  .install-success.show { display: block; }
+</style>
+</head>
+<body>
+
+<div class="dust" aria-hidden="true">
+  <span></span><span></span><span></span><span></span><span></span><span></span>
+  <span></span><span></span><span></span><span></span><span></span><span></span>
+</div>
+
+<main class="shell">
+  <div class="install-wrap">
+    <div class="install-icon-wrap">
+      <img src="../icon-192.png" alt="">
+    </div>
+    <h1 class="install-title">Instalar no Seu <span class="gold">Celular</span></h1>
+    <p class="install-sub">Toque abaixo para adicionar o kit à sua tela de início.</p>
+
+    <button class="install-action" id="installBtn" type="button">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      <span id="installBtnText">Instalar Agora</span>
+    </button>
+
+    <p class="install-hint" id="installHint"></p>
+    <p class="install-success" id="installSuccess">✓ App instalado</p>
+  </div>
+</main>
+
+<nav class="bottom-nav" aria-label="Primary">
+  <div class="bottom-nav-inner">
+    <a class="nav-item" href="../index.html">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      Início
+    </a>
+    <a class="nav-item" href="../library/index.html">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+      Biblioteca
+    </a>
+    <a class="nav-item" href="../chants/index.html">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+      Cantos
+    </a>
+    <a class="nav-item" href="../support/index.html">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      Suporte
+    </a>
+  </div>
+</nav>
+
+<script>
+  (function() {
+    var ua = (navigator.userAgent || '').toLowerCase();
+    var isIOS = /iphone|ipad|ipod/.test(ua);
+    var isAndroid = /android/.test(ua);
+    var isStandalone = window.matchMedia('(display-mode: standalone)').matches
+                    || window.navigator.standalone === true;
+
+    var btn = document.getElementById('installBtn');
+    var btnText = document.getElementById('installBtnText');
+    var hint = document.getElementById('installHint');
+    var success = document.getElementById('installSuccess');
+
+    if (isStandalone) {
+      btn.style.display = 'none';
+      success.classList.add('show');
+      hint.innerHTML = 'Você já está usando o app.';
+      return;
+    }
+
+    var deferredPrompt = null;
+
+    if (isIOS) {
+      btnText.textContent = 'Como Instalar';
+      hint.innerHTML = '<strong>iPhone:</strong> Toque no botão <strong>Compartilhar</strong> na parte inferior do Safari, role para baixo e selecione <strong>"Adicionar à Tela de Início"</strong>.';
+      btn.addEventListener('click', function() {
+        hint.style.background = 'rgba(201,168,76,0.08)';
+        hint.style.padding = '14px 16px';
+        hint.style.borderRadius = '6px';
+        hint.style.border = '1px solid rgba(201,168,76,0.3)';
+      });
+    } else if (isAndroid) {
+      btn.disabled = true;
+      btnText.textContent = 'Carregando...';
+      hint.innerHTML = 'Preparando o instalador...';
+
+      window.addEventListener('beforeinstallprompt', function(e) {
+        e.preventDefault();
+        deferredPrompt = e;
+        btn.disabled = false;
+        btnText.textContent = 'Instalar Agora';
+        hint.innerHTML = 'Toque acima — o kit aparecerá na sua tela de início.';
+      });
+
+      setTimeout(function() {
+        if (!deferredPrompt) {
+          btn.disabled = false;
+          btnText.textContent = 'Como Instalar';
+          hint.innerHTML = '<strong>Android:</strong> Abra o menu (⋮) no Chrome e toque em <strong>"Adicionar à Tela de Início"</strong> ou <strong>"Instalar app"</strong>.';
+        }
+      }, 1500);
+
+      btn.addEventListener('click', function() {
+        if (!deferredPrompt) return;
+        deferredPrompt.prompt();
+        deferredPrompt.userChoice.then(function(choice) {
+          if (choice.outcome === 'accepted') {
+            btn.style.display = 'none';
+            success.classList.add('show');
+          }
+          deferredPrompt = null;
+        });
+      });
+    } else {
+      // Desktop
+      btnText.textContent = 'Abrir no Celular';
+      btn.disabled = true;
+      btn.style.opacity = '0.6';
+      btn.style.cursor = 'default';
+      hint.innerHTML = 'O app é instalado em celulares. Abra esta página no seu <strong>iPhone ou Android</strong> para instalar.';
+    }
+
+    window.addEventListener('appinstalled', function() {
+      btn.style.display = 'none';
+      success.classList.add('show');
+    });
+  })();
+</script>
+
+</body>
+</html>
